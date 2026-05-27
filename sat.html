@@ -223,21 +223,41 @@
       const sorularBtn = document.getElementById('nav-sorular-btn');
       const sorularLi  = sorularBtn?.closest('.has-dropdown');
 
+      // ── Hamburger toggle ──
       hamburger?.addEventListener('click', () => {
         const open = mainNav.classList.toggle('open');
         hamburger.setAttribute('aria-expanded', String(open));
         hamburger.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
       });
 
-      sorularBtn?.addEventListener('click', e => {
-        e.stopPropagation();
+      // ── Dropdown: click toggle (mobile + keyboard) ──
+      sorularBtn?.addEventListener('click', () => {
         const open = sorularLi.classList.toggle('open');
         sorularBtn.setAttribute('aria-expanded', String(open));
       });
 
-      document.addEventListener('click', () => {
-        sorularLi?.classList.remove('open');
-        sorularBtn?.setAttribute('aria-expanded', 'false');
+      // ── Dropdown: hover with 250 ms close-delay on pointer devices (gringlizce.com approach) ──
+      if (sorularLi && window.matchMedia('(hover: hover)').matches) {
+        let _closeTimer;
+        sorularLi.addEventListener('mouseenter', () => {
+          clearTimeout(_closeTimer);
+          sorularLi.classList.add('open');
+          sorularBtn?.setAttribute('aria-expanded', 'true');
+        });
+        sorularLi.addEventListener('mouseleave', () => {
+          _closeTimer = setTimeout(() => {
+            sorularLi.classList.remove('open');
+            sorularBtn?.setAttribute('aria-expanded', 'false');
+          }, 250);
+        });
+      }
+
+      // ── Close dropdown when clicking outside ──
+      document.addEventListener('click', e => {
+        if (!sorularLi?.contains(e.target)) {
+          sorularLi?.classList.remove('open');
+          sorularBtn?.setAttribute('aria-expanded', 'false');
+        }
       });
     })();
   </script>
