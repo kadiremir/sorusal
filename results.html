@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonuçlar — Sorusal</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/results.css">
+  <!-- KaTeX for math in explanations -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+        crossorigin="anonymous">
+</head>
+<body class="results-page">
+
+  <!-- ── HEADER ── -->
+  <header class="main-header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo" aria-label="Sorusal — Ana Sayfa">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-text">Sorusal</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Ana navigasyon">
+        <ul class="nav-list">
+
+          <li class="nav-item">
+            <a href="index.html#sinavlar" class="nav-link">Sınavlar</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="nav-sorular-btn">
+              Sorular <span class="nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="nav-dropdown" role="menu" aria-labelledby="nav-sorular-btn">
+              <li role="none">
+                <a href="sat.html" class="nav-dropdown-item" role="menuitem">
+                  <span class="nav-dropdown-icon">🎓</span>
+                  <span class="nav-dropdown-body">
+                    <strong>SAT</strong>
+                    <span>SAT Math soru bankası</span>
+                  </span>
+                  <span class="nav-dropdown-badge">Aktif</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html#kaynaklar" class="nav-link">Kaynaklar</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html#iletisim" class="nav-link">İletişim</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="sat.html" class="btn-nav-cta">Yeni Sınav →</a>
+        <button class="nav-hamburger"
+                id="nav-hamburger"
+                aria-label="Menüyü aç"
+                aria-expanded="false"
+                aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ── SCORE CARD ── -->
+    <section class="score-card" aria-label="Sınav sonucu özeti">
+      <!-- Animated SVG ring -->
+      <div class="score-ring-wrap">
+        <div id="score-ring" aria-hidden="true">
+          <!-- JS injects SVG -->
+        </div>
+        <div class="score-ring-inner">
+          <span id="score-fraction" class="score-fraction">0 / 0</span>
+          <span id="score-percent"  class="score-percent">0%</span>
+        </div>
+      </div>
+
+      <p id="score-label-text" class="score-label-text" aria-live="polite"></p>
+
+      <div id="score-breakdown" class="score-breakdown" aria-live="polite">
+        <!-- JS injects breakdown pills -->
+      </div>
+    </section>
+
+    <!-- ── ACTIONS ── -->
+    <div class="results-actions">
+      <a href="sat.html" class="btn-primary">Yeni Sınav</a>
+      <button id="retry-btn" class="btn-ghost">Aynı Soruları Tekrar Çöz</button>
+    </div>
+
+    <!-- ── REVIEW LIST ── -->
+    <section class="review-section" aria-label="Soru incelemesi">
+      <h2>Soru İncelemesi</h2>
+      <div id="review-list" class="review-list">
+        <!-- JS injects one <details> element per question -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-logo" aria-label="Sorusal — Ana Sayfa">
+          <span class="logo-mark" aria-hidden="true">S</span>
+          <span class="logo-text">Sorusal</span>
+        </a>
+        <p class="footer-copy">
+          Sorusal &copy; 2025 &mdash;
+          SAT® College Board'ın tescilli markasıdır.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nav JS -->
+  <script>
+    (function () {
+      const hamburger  = document.getElementById('nav-hamburger');
+      const mainNav    = document.getElementById('main-nav');
+      const sorularBtn = document.getElementById('nav-sorular-btn');
+      const sorularLi  = sorularBtn?.closest('.has-dropdown');
+
+      hamburger?.addEventListener('click', () => {
+        const open = mainNav.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', String(open));
+        hamburger.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+      });
+
+      sorularBtn?.addEventListener('click', e => {
+        e.stopPropagation();
+        const open = sorularLi.classList.toggle('open');
+        sorularBtn.setAttribute('aria-expanded', String(open));
+      });
+
+      document.addEventListener('click', () => {
+        sorularLi?.classList.remove('open');
+        sorularBtn?.setAttribute('aria-expanded', 'false');
+      });
+    })();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+          crossorigin="anonymous"></script>
+  <script type="module" src="js/results.js"></script>
+</body>
+</html>

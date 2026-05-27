@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ALG-LE-001",
+    "section": "algebra",
+    "subsection": "linear-equations",
+    "difficulty": "easy",
+    "tags": ["one-step", "solving"],
+    "question": { "type": "text", "content": "If 3x − 7 = 14, what is the value of x?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "5" },
+      { "label": "B", "type": "text", "content": "7" },
+      { "label": "C", "type": "text", "content": "9" },
+      { "label": "D", "type": "text", "content": "21" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "Add 7 to both sides: 3x = 21. Divide both sides by 3: x = 7." }
+  },
+  {
+    "id": "ALG-LE-002",
+    "section": "algebra",
+    "subsection": "linear-equations",
+    "difficulty": "medium",
+    "tags": ["fractions", "multi-step"],
+    "question": { "type": "latex", "content": "If $\\dfrac{2x + 4}{3} = 8$, what is the value of $x$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x = 6$" },
+      { "label": "B", "type": "latex", "content": "$x = 8$" },
+      { "label": "C", "type": "latex", "content": "$x = 10$" },
+      { "label": "D", "type": "latex", "content": "$x = 14$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Multiply both sides by 3: $2x + 4 = 24$. Subtract 4: $2x = 20$. Divide by 2: $x = 10$." }
+  },
+  {
+    "id": "ALG-LE-003",
+    "section": "algebra",
+    "subsection": "linear-equations",
+    "difficulty": "medium",
+    "tags": ["word problem", "real-world"],
+    "question": { "type": "text", "content": "A plumber charges a flat fee of $45 plus $30 per hour. If the total bill was $135, how many hours did the plumber work?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "2 hours" },
+      { "label": "B", "type": "text", "content": "3 hours" },
+      { "label": "C", "type": "text", "content": "4 hours" },
+      { "label": "D", "type": "text", "content": "5 hours" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "Set up: 45 + 30h = 135. Subtract 45: 30h = 90. Divide by 30: h = 3 hours." }
+  },
+  {
+    "id": "ALG-LE-004",
+    "section": "algebra",
+    "subsection": "linear-equations",
+    "difficulty": "medium",
+    "tags": ["distributive property"],
+    "question": { "type": "latex", "content": "If $5(x - 2) = 3x + 4$, what is the value of $x$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x = 2$" },
+      { "label": "B", "type": "latex", "content": "$x = 3$" },
+      { "label": "C", "type": "latex", "content": "$x = 5$" },
+      { "label": "D", "type": "latex", "content": "$x = 7$" }
+    ],
+    "correctIndex": 3,
+    "explanation": { "type": "latex", "content": "Distribute: $5x - 10 = 3x + 4$. Subtract $3x$: $2x - 10 = 4$. Add 10: $2x = 14$. So $x = 7$." }
+  },
+  {
+    "id": "ALG-LE-005",
+    "section": "algebra",
+    "subsection": "linear-equations",
+    "difficulty": "easy",
+    "tags": ["multi-step", "expression value"],
+    "question": { "type": "text", "content": "If 2x + 9 = 25, what is the value of 3x?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "8" },
+      { "label": "B", "type": "text", "content": "12" },
+      { "label": "C", "type": "text", "content": "24" },
+      { "label": "D", "type": "text", "content": "27" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "Subtract 9: 2x = 16. So x = 8. Therefore 3x = 3(8) = 24." }
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "algebra",
+    "labelEn": "Algebra",
+    "labelTr": "Cebir",
+    "color": "#204f5e",
+    "icon": "x²",
+    "subsections": [
+      { "id": "linear-equations",   "labelTr": "Bir Değişkenli Doğrusal Denklemler",        "labelEn": "Linear Equations in One Variable",  "file": "data/algebra/linear-equations.json" },
+      { "id": "linear-functions",   "labelTr": "Doğrusal Fonksiyonlar",                      "labelEn": "Linear Functions",                 "file": "data/algebra/linear-functions.json" },
+      { "id": "linear-inequalities","labelTr": "Doğrusal Eşitsizlikler ve Sistemler",         "labelEn": "Linear Inequalities & Systems",    "file": "data/algebra/linear-inequalities.json" },
+      { "id": "systems-of-equations","labelTr": "İki Doğrusal Denklem Sistemleri",            "labelEn": "Systems of Two Linear Equations",  "file": "data/algebra/systems-of-equations.json" }
+    ]
+  },
+  {
+    "id": "advanced-math",
+    "labelEn": "Advanced Math",
+    "labelTr": "İleri Matematik",
+    "color": "#39736d",
+    "icon": "∫",
+    "subsections": [
+      { "id": "quadratics",            "labelTr": "İkinci Dereceden Denklemler ve Fonksiyonlar", "labelEn": "Quadratic Equations & Functions",   "file": "data/advanced-math/quadratics.json" },
+      { "id": "polynomials",           "labelTr": "Polinom Fonksiyonları ve Çarpanlar",           "labelEn": "Polynomial Functions & Factors",   "file": "data/advanced-math/polynomials.json" },
+      { "id": "exponential-functions", "labelTr": "Üstel Fonksiyonlar",                           "labelEn": "Exponential Functions",           "file": "data/advanced-math/exponential-functions.json" },
+      { "id": "rational-functions",    "labelTr": "Rasyonel İfadeler ve Denklemler",              "labelEn": "Rational Expressions & Equations","file": "data/advanced-math/rational-functions.json" }
+    ]
+  },
+  {
+    "id": "problem-solving",
+    "labelEn": "Problem Solving & Data Analysis",
+    "labelTr": "Problem Çözme ve Veri Analizi",
+    "color": "#7b3d36",
+    "icon": "📊",
+    "subsections": [
+      { "id": "ratios-and-rates",  "labelTr": "Oran, Hız ve Orantı",                           "labelEn": "Ratios, Rates & Proportions",     "file": "data/problem-solving/ratios-and-rates.json" },
+      { "id": "percentages",       "labelTr": "Yüzdeler ve Yüzde Değişim",                      "labelEn": "Percentages & Percent Change",    "file": "data/problem-solving/percentages.json" },
+      { "id": "statistics",        "labelTr": "Tek Değişkenli İstatistik",                      "labelEn": "One-Variable Statistics",         "file": "data/problem-solving/statistics.json" },
+      { "id": "probability",       "labelTr": "Olasılık",                                        "labelEn": "Probability",                     "file": "data/problem-solving/probability.json" },
+      { "id": "two-variable-data", "labelTr": "İki Değişkenli Veri ve Saçılım Grafikleri",      "labelEn": "Two-Variable Data & Scatterplots","file": "data/problem-solving/two-variable-data.json" }
+    ]
+  },
+  {
+    "id": "geometry",
+    "labelEn": "Geometry & Trigonometry",
+    "labelTr": "Geometri ve Trigonometri",
+    "color": "#5a4a8a",
+    "icon": "△",
+    "subsections": [
+      { "id": "lines-and-angles", "labelTr": "Doğrular, Açılar ve Paralel Doğrular", "labelEn": "Lines, Angles & Parallel Lines",        "file": "data/geometry/lines-and-angles.json" },
+      { "id": "triangles",        "labelTr": "Üçgenler ve Pisagor Teoremi",           "labelEn": "Triangles & Pythagorean Theorem",      "file": "data/geometry/triangles.json" },
+      { "id": "circles",          "labelTr": "Çemberler",                             "labelEn": "Circles",                              "file": "data/geometry/circles.json" },
+      { "id": "area-and-volume",  "labelTr": "Alan, Yüzey Alanı ve Hacim",           "labelEn": "Area, Surface Area & Volume",          "file": "data/geometry/area-and-volume.json" },
+      { "id": "trigonometry",     "labelTr": "Trigonometri ve Radyanlar",             "labelEn": "Trigonometry & Radians",               "file": "data/geometry/trigonometry.json" }
+    ]
+  }
+]

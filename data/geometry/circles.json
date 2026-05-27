@@ -1,0 +1,66 @@
+[
+  {
+    "id": "GEO-CI-001",
+    "section": "geometry",
+    "subsection": "circles",
+    "difficulty": "easy",
+    "tags": ["circumference", "formula"],
+    "question": { "type": "latex", "content": "What is the circumference of a circle with radius $7$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$7\\pi$" },
+      { "label": "B", "type": "latex", "content": "$14\\pi$" },
+      { "label": "C", "type": "latex", "content": "$49\\pi$" },
+      { "label": "D", "type": "latex", "content": "$98\\pi$" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "$C = 2\\pi r = 2\\pi(7) = 14\\pi$." }
+  },
+  {
+    "id": "GEO-CI-002",
+    "section": "geometry",
+    "subsection": "circles",
+    "difficulty": "easy",
+    "tags": ["area", "diameter"],
+    "question": { "type": "latex", "content": "What is the area of a circle with diameter $10$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$10\\pi$" },
+      { "label": "B", "type": "latex", "content": "$20\\pi$" },
+      { "label": "C", "type": "latex", "content": "$25\\pi$" },
+      { "label": "D", "type": "latex", "content": "$100\\pi$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Radius $= 5$. Area $= \\pi r^2 = \\pi(5)^2 = 25\\pi$." }
+  },
+  {
+    "id": "GEO-CI-003",
+    "section": "geometry",
+    "subsection": "circles",
+    "difficulty": "medium",
+    "tags": ["arc length", "central angle"],
+    "question": { "type": "latex", "content": "An arc of a circle subtends a central angle of $120°$. If the radius is $9$, what is the length of the arc?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$3\\pi$" },
+      { "label": "B", "type": "latex", "content": "$4\\pi$" },
+      { "label": "C", "type": "latex", "content": "$6\\pi$" },
+      { "label": "D", "type": "latex", "content": "$9\\pi$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Arc length $= \\dfrac{120}{360} \\times 2\\pi(9) = \\dfrac{1}{3} \\times 18\\pi = 6\\pi$." }
+  },
+  {
+    "id": "GEO-CI-004",
+    "section": "geometry",
+    "subsection": "circles",
+    "difficulty": "medium",
+    "tags": ["standard form", "center radius"],
+    "question": { "type": "latex", "content": "The equation of a circle is $(x-3)^2 + (y+2)^2 = 25$. What is the radius of the circle?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "5" },
+      { "label": "B", "type": "text", "content": "10" },
+      { "label": "C", "type": "text", "content": "25" },
+      { "label": "D", "type": "latex", "content": "$\\sqrt{5}$" }
+    ],
+    "correctIndex": 0,
+    "explanation": { "type": "latex", "content": "Standard form: $(x-h)^2+(y-k)^2=r^2$. Here $r^2=25$, so $r=\\sqrt{25}=5$." }
+  }
+]

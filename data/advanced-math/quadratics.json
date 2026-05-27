@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ADV-QU-001",
+    "section": "advanced-math",
+    "subsection": "quadratics",
+    "difficulty": "easy",
+    "tags": ["factoring", "roots"],
+    "question": { "type": "latex", "content": "What are the solutions of $x^2 - 7x + 12 = 0$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x = 2$ and $x = 6$" },
+      { "label": "B", "type": "latex", "content": "$x = 3$ and $x = 4$" },
+      { "label": "C", "type": "latex", "content": "$x = -3$ and $x = -4$" },
+      { "label": "D", "type": "latex", "content": "$x = -2$ and $x = -6$" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Factor: $(x-3)(x-4) = 0$. Setting each factor to zero: $x = 3$ or $x = 4$." }
+  },
+  {
+    "id": "ADV-QU-002",
+    "section": "advanced-math",
+    "subsection": "quadratics",
+    "difficulty": "medium",
+    "tags": ["vertex", "parabola", "completing the square"],
+    "question": { "type": "latex", "content": "The vertex of the parabola $y = x^2 - 4x + 7$ is at point $(h, k)$. What is $k$?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "−4" },
+      { "label": "B", "type": "text", "content": "1" },
+      { "label": "C", "type": "text", "content": "3" },
+      { "label": "D", "type": "text", "content": "7" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Complete the square: $y = (x-2)^2 - 4 + 7 = (x-2)^2 + 3$. Vertex is $(2,\\ 3)$, so $k = 3$." }
+  },
+  {
+    "id": "ADV-QU-003",
+    "section": "advanced-math",
+    "subsection": "quadratics",
+    "difficulty": "medium",
+    "tags": ["factoring", "equivalent expressions"],
+    "question": { "type": "latex", "content": "Which of the following is equivalent to $x^2 - 6x + 5$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$(x-1)(x+5)$" },
+      { "label": "B", "type": "latex", "content": "$(x+1)(x-5)$" },
+      { "label": "C", "type": "latex", "content": "$(x-1)(x-5)$" },
+      { "label": "D", "type": "latex", "content": "$(x+5)(x-1)$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Find two numbers that multiply to 5 and add to −6: those are −1 and −5. So $x^2-6x+5 = (x-1)(x-5)$." }
+  },
+  {
+    "id": "ADV-QU-004",
+    "section": "advanced-math",
+    "subsection": "quadratics",
+    "difficulty": "medium",
+    "tags": ["projectile", "word problem"],
+    "question": { "type": "latex", "content": "A ball is thrown upward with height given by $h = -16t^2 + 64t$ (in feet). At what time $t$ does the ball hit the ground?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "2 seconds" },
+      { "label": "B", "type": "text", "content": "4 seconds" },
+      { "label": "C", "type": "text", "content": "6 seconds" },
+      { "label": "D", "type": "text", "content": "8 seconds" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Set $h = 0$: $-16t^2 + 64t = 0 \\Rightarrow -16t(t-4) = 0$. So $t = 0$ (launch) or $t = 4$ (lands)." }
+  },
+  {
+    "id": "ADV-QU-005",
+    "section": "advanced-math",
+    "subsection": "quadratics",
+    "difficulty": "hard",
+    "tags": ["quadratic formula", "two solutions"],
+    "question": { "type": "latex", "content": "What are the solutions of $2x^2 - 5x - 3 = 0$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x = 3$ and $x = -\\dfrac{1}{2}$" },
+      { "label": "B", "type": "latex", "content": "$x = -3$ and $x = \\dfrac{1}{2}$" },
+      { "label": "C", "type": "latex", "content": "$x = 3$ and $x = 1$" },
+      { "label": "D", "type": "latex", "content": "$x = -3$ and $x = 1$" }
+    ],
+    "correctIndex": 0,
+    "explanation": { "type": "latex", "content": "Factor: $(2x+1)(x-3) = 0$. So $x = -\\dfrac{1}{2}$ or $x = 3$." }
+  }
+]

@@ -1,0 +1,126 @@
+/* =============================================
+   quiz.css — Quiz page styles
+   ============================================= */
+
+/* ── Quiz header (sticky) ── */
+.quiz-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.quiz-progress-bar {
+  height: 4px;
+  background: var(--color-border);
+  width: 100%;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  transition: width 0.4s ease;
+  border-radius: 0 var(--radius-full) var(--radius-full) 0;
+}
+
+.quiz-nav-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  gap: var(--space-md);
+}
+
+#question-counter {
+  font-weight: 700;
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  white-space: nowrap;
+  min-width: 60px;
+}
+
+.meta-badges {
+  display: flex;
+  gap: var(--space-sm);
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Quiz main ── */
+.quiz-main {
+  padding: var(--space-xl) var(--container-pad);
+  min-height: calc(100vh - 56px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* ── Question card ── */
+.question-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-xl) var(--space-xl);
+  box-shadow: var(--shadow-md);
+  border: 1.5px solid var(--color-border);
+}
+
+.question-body {
+  font-size: var(--font-size-lg);
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+.question-body p {
+  margin: 0;
+}
+
+.question-body figure {
+  margin: var(--space-md) 0 0;
+}
+
+/* ── Choices grid ── */
+.choices-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+@media (max-width: 640px) {
+  .choices-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Quiz navigation controls ── */
+.quiz-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-bottom: var(--space-xl);
+}
+
+/* ── Mobile ── */
+@media (max-width: 600px) {
+  .quiz-main {
+    padding: var(--space-lg) var(--container-pad);
+    gap: var(--space-lg);
+  }
+
+  .question-card {
+    padding: var(--space-lg);
+  }
+
+  .question-body {
+    font-size: var(--font-size-base);
+  }
+
+  .meta-badges {
+    display: none; /* hide on very small screens */
+  }
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAT Soruları — Sorusal</title>
+  <meta name="description" content="SAT Matematik soru bankası. Konuya göre soru seç, çöz, öğren. Cebir, İleri Matematik, Problem Çözme ve Geometri.">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/sat.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════════ -->
+  <header class="main-header">
+    <div class="container nav-container">
+
+      <a href="index.html" class="logo" aria-label="Sorusal — Ana Sayfa">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-text">Sorusal</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Ana navigasyon">
+        <ul class="nav-list">
+
+          <li class="nav-item">
+            <a href="index.html#sinavlar" class="nav-link">Sınavlar</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="nav-sorular-btn">
+              Sorular <span class="nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="nav-dropdown" role="menu" aria-labelledby="nav-sorular-btn">
+              <li role="none">
+                <a href="sat.html" class="nav-dropdown-item" role="menuitem">
+                  <span class="nav-dropdown-icon">🎓</span>
+                  <span class="nav-dropdown-body">
+                    <strong>SAT</strong>
+                    <span>SAT Math soru bankası</span>
+                  </span>
+                  <span class="nav-dropdown-badge">Aktif</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html#kaynaklar" class="nav-link">Kaynaklar</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="index.html#iletisim" class="nav-link">İletişim</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="sat.html" class="btn-nav-cta">Sınava Başla →</a>
+        <button class="nav-hamburger"
+                id="nav-hamburger"
+                aria-label="Menüyü aç"
+                aria-expanded="false"
+                aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       SAT HERO (compact)
+  ═══════════════════════════════════════════ -->
+  <section class="sat-hero">
+    <div class="container">
+      <p class="sat-hero-breadcrumb">
+        <a href="index.html">Ana Sayfa</a>
+        &nbsp;/&nbsp; Sorular &nbsp;/&nbsp; SAT
+      </p>
+      <h1>SAT Matematik</h1>
+      <p>
+        Alan ve alt konu seç, sınav ayarlarını yap, hemen başla.
+      </p>
+
+      <!-- Live stats injected by JS -->
+      <div id="sat-stats" class="sat-stats" aria-live="polite">
+        <!-- JS: soru sayısı, alan sayısı, alt konu sayısı -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       MAIN CONTENT
+  ═══════════════════════════════════════════ -->
+  <main class="sat-main">
+    <div class="container">
+
+      <!-- STEP 1 — Section selector -->
+      <p class="step-label">1 — Alan Seç</p>
+      <div id="section-cards"
+           class="section-grid"
+           role="group"
+           aria-label="SAT matematik alanları">
+        <!-- JS renders cards -->
+        <p style="color:var(--color-text-muted);font-size:14px">Yükleniyor…</p>
+      </div>
+
+      <!-- STEP 2 — Subsection chips (hidden until section chosen) -->
+      <section id="subsection-panel"
+               class="subsection-panel hidden"
+               aria-labelledby="subsection-heading">
+
+        <p class="step-label">2 — Alt Konu Seç</p>
+        <h2 class="section-title" id="subsection-heading" style="display:none">Alt Konu</h2>
+
+        <div id="subsection-chips"
+             class="chip-group"
+             role="group"
+             aria-label="Alt konular">
+          <!-- JS renders chips -->
+        </div>
+
+        <div class="subsection-actions">
+          <button id="select-all-btn" class="btn-ghost btn-sm">Tümünü Seç</button>
+          <span id="subsection-domain-label"
+                class="badge"
+                style="color:#fff;font-size:13px;padding:4px 14px;border-radius:999px;display:none">
+          </span>
+        </div>
+      </section>
+
+      <!-- STEP 3 — Quiz settings (hidden until ≥1 subsection chosen) -->
+      <section id="quiz-settings"
+               class="quiz-settings hidden"
+               aria-labelledby="settings-heading">
+
+        <p class="step-label">3 — Sınav Ayarları</p>
+
+        <div class="settings-row">
+
+          <!-- Question count -->
+          <div class="field-group">
+            <label id="count-label">Soru Sayısı</label>
+            <div class="segmented"
+                 id="count-selector"
+                 role="group"
+                 aria-labelledby="count-label">
+              <button class="seg-btn" data-value="5">5</button>
+              <button class="seg-btn active" data-value="10">10</button>
+              <button class="seg-btn" data-value="20">20</button>
+              <button class="seg-btn" data-value="all">Tümü</button>
+            </div>
+          </div>
+
+          <!-- Difficulty -->
+          <div class="field-group">
+            <label id="diff-label">Zorluk</label>
+            <div class="segmented"
+                 id="difficulty-selector"
+                 role="group"
+                 aria-labelledby="diff-label">
+              <button class="seg-btn active" data-value="all">Hepsi</button>
+              <button class="seg-btn" data-value="easy">Kolay</button>
+              <button class="seg-btn" data-value="medium">Orta</button>
+              <button class="seg-btn" data-value="hard">Zor</button>
+            </div>
+          </div>
+
+        </div>
+
+        <p id="available-count" class="available-hint" aria-live="polite"></p>
+
+        <button id="start-quiz-btn" class="btn-primary btn-large" disabled>
+          Sınavı Başlat →
+        </button>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <a href="index.html" class="footer-logo" aria-label="Sorusal — Ana Sayfa">
+          <span class="logo-mark" aria-hidden="true">S</span>
+          <span class="logo-text">Sorusal</span>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="index.html#sinavlar">Sınavlar</a></li>
+          <li><a href="sat.html">SAT Soruları</a></li>
+          <li><a href="index.html#kaynaklar">Kaynaklar</a></li>
+          <li><a href="index.html#iletisim">İletişim</a></li>
+        </ul>
+
+        <p class="footer-copy">
+          Sorusal &copy; 2025 &mdash;
+          SAT® College Board'ın tescilli markasıdır. Bu proje College Board ile bağlantılı değildir.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nav JS -->
+  <script>
+    (function () {
+      const hamburger  = document.getElementById('nav-hamburger');
+      const mainNav    = document.getElementById('main-nav');
+      const sorularBtn = document.getElementById('nav-sorular-btn');
+      const sorularLi  = sorularBtn?.closest('.has-dropdown');
+
+      hamburger?.addEventListener('click', () => {
+        const open = mainNav.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', String(open));
+        hamburger.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+      });
+
+      sorularBtn?.addEventListener('click', e => {
+        e.stopPropagation();
+        const open = sorularLi.classList.toggle('open');
+        sorularBtn.setAttribute('aria-expanded', String(open));
+      });
+
+      document.addEventListener('click', () => {
+        sorularLi?.classList.remove('open');
+        sorularBtn?.setAttribute('aria-expanded', 'false');
+      });
+    })();
+  </script>
+
+  <script type="module" src="js/sat.js"></script>
+</body>
+</html>

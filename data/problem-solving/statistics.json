@@ -1,0 +1,66 @@
+[
+  {
+    "id": "PS-ST-001",
+    "section": "problem-solving",
+    "subsection": "statistics",
+    "difficulty": "easy",
+    "tags": ["median", "ordered data"],
+    "question": { "type": "text", "content": "The ages of five students are 14, 15, 15, 16, and 20. What is the median age?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "14" },
+      { "label": "B", "type": "text", "content": "15" },
+      { "label": "C", "type": "text", "content": "16" },
+      { "label": "D", "type": "text", "content": "20" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "Sorted: 14, 15, 15, 16, 20. The middle value (3rd of 5) is 15." }
+  },
+  {
+    "id": "PS-ST-002",
+    "section": "problem-solving",
+    "subsection": "statistics",
+    "difficulty": "easy",
+    "tags": ["mean", "average"],
+    "question": { "type": "text", "content": "The heights (in inches) of 6 students are: 60, 62, 64, 65, 68, and 71. What is the mean height?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "64" },
+      { "label": "B", "type": "text", "content": "64.5" },
+      { "label": "C", "type": "text", "content": "65" },
+      { "label": "D", "type": "text", "content": "66" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "Sum = 60+62+64+65+68+71 = 390. Mean = 390 ÷ 6 = 65." }
+  },
+  {
+    "id": "PS-ST-003",
+    "section": "problem-solving",
+    "subsection": "statistics",
+    "difficulty": "easy",
+    "tags": ["range"],
+    "question": { "type": "text", "content": "What is the range of the data set {4, 7, 7, 8, 9, 10, 13}?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "7" },
+      { "label": "B", "type": "text", "content": "8" },
+      { "label": "C", "type": "text", "content": "9" },
+      { "label": "D", "type": "text", "content": "10" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "Range = Maximum − Minimum = 13 − 4 = 9." }
+  },
+  {
+    "id": "PS-ST-004",
+    "section": "problem-solving",
+    "subsection": "statistics",
+    "difficulty": "medium",
+    "tags": ["outlier", "effect on mean"],
+    "question": { "type": "text", "content": "Test scores for a group are: 70, 75, 80, 85, 90, 95 (mean = 82.5). If a student who scored 60 joins the group, what happens to the mean?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "It increases" },
+      { "label": "B", "type": "text", "content": "It decreases" },
+      { "label": "C", "type": "text", "content": "It stays the same" },
+      { "label": "D", "type": "text", "content": "It doubles" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "New mean $= \\dfrac{495+60}{7} = \\dfrac{555}{7} \\approx 79.3$. Since $79.3 < 82.5$, the mean decreases." }
+  }
+]

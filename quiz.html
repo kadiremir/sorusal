@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sınav — Sorusal</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/quiz.css">
+  <!-- KaTeX CSS (must load before JS renders math) -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+        crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- ── QUIZ HEADER (sticky) ── -->
+  <header class="quiz-header">
+    <!-- Animated progress bar -->
+    <div class="quiz-progress-bar"
+         role="progressbar"
+         aria-valuemin="0"
+         aria-valuemax="100"
+         aria-label="Sınav ilerlemesi">
+      <div id="progress-fill" class="progress-fill" style="width:0%"></div>
+    </div>
+
+    <!-- Nav strip: logo | counter | badges | quit -->
+    <div class="quiz-nav-strip container">
+      <a href="index.html" class="logo quiz-logo" aria-label="Sorusal — Ana Sayfa">
+        <span class="logo-mark" aria-hidden="true" style="width:28px;height:28px;font-size:14px;">S</span>
+        <span class="logo-text" style="font-size:16px;">Sorusal</span>
+      </a>
+
+      <span id="question-counter" aria-live="polite" aria-atomic="true">
+        1 / …
+      </span>
+
+      <div class="meta-badges" aria-hidden="true">
+        <span id="domain-badge" class="badge"></span>
+        <span id="difficulty-badge" class="badge"></span>
+      </div>
+
+      <button id="quit-btn" class="btn-ghost btn-sm">Çıkış</button>
+    </div>
+  </header>
+
+  <!-- ── QUIZ BODY ── -->
+  <main class="quiz-main">
+
+    <!-- Question card -->
+    <article id="question-card" class="question-card">
+      <div id="question-body"
+           class="question-body"
+           aria-live="polite"
+           aria-atomic="true">
+        <!-- JS injects question content (text / image / KaTeX) -->
+      </div>
+    </article>
+
+    <!-- Choices (A / B / C / D) -->
+    <div id="choices-grid"
+         class="choices-grid"
+         role="radiogroup"
+         aria-label="Cevap seçenekleri">
+      <!-- JS injects 4 choice buttons -->
+    </div>
+
+    <!-- Navigation buttons -->
+    <nav class="quiz-controls" aria-label="Sınav navigasyonu">
+      <button id="prev-btn"
+              class="btn-ghost"
+              disabled
+              aria-label="Önceki soruya git">
+        ← Önceki
+      </button>
+
+      <button id="next-btn"
+              class="btn-primary"
+              disabled
+              aria-label="Sonraki soruya git">
+        Sonraki →
+      </button>
+
+      <button id="submit-btn"
+              class="btn-accent hidden"
+              aria-label="Sınavı bitir ve sonuçları gör">
+        Sınavı Bitir ✓
+      </button>
+    </nav>
+
+  </main>
+
+  <!--
+    KaTeX scripts must execute BEFORE the ES module (quiz.js) runs,
+    so that renderMathInElement is available when katex-render.js calls it.
+    Non-defer scripts run synchronously; ES modules are deferred by default.
+  -->
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"
+          crossorigin="anonymous"></script>
+  <script type="module" src="js/quiz.js"></script>
+</body>
+</html>

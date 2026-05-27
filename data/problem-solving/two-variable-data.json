@@ -1,0 +1,66 @@
+[
+  {
+    "id": "PS-TV-001",
+    "section": "problem-solving",
+    "subsection": "two-variable-data",
+    "difficulty": "easy",
+    "tags": ["correlation", "direction"],
+    "question": { "type": "text", "content": "A scatterplot shows a strong positive correlation between hours studied and test scores. What does this mean?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "As hours increase, test scores decrease" },
+      { "label": "B", "type": "text", "content": "Hours and test scores have no relationship" },
+      { "label": "C", "type": "text", "content": "As hours increase, test scores tend to increase" },
+      { "label": "D", "type": "text", "content": "Test scores cause hours studied" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "A positive correlation means that as one variable increases, the other tends to increase as well." }
+  },
+  {
+    "id": "PS-TV-002",
+    "section": "problem-solving",
+    "subsection": "two-variable-data",
+    "difficulty": "medium",
+    "tags": ["line of best fit", "slope"],
+    "question": { "type": "text", "content": "The line of best fit for a scatterplot passes through (0, 5) and (4, 17). What is the slope of the line?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "2" },
+      { "label": "B", "type": "text", "content": "3" },
+      { "label": "C", "type": "text", "content": "4" },
+      { "label": "D", "type": "text", "content": "5" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Slope $= \\dfrac{17-5}{4-0} = \\dfrac{12}{4} = 3$." }
+  },
+  {
+    "id": "PS-TV-003",
+    "section": "problem-solving",
+    "subsection": "two-variable-data",
+    "difficulty": "medium",
+    "tags": ["prediction", "regression equation"],
+    "question": { "type": "latex", "content": "The equation $\\hat{y} = 2.5x + 10$ is the line of best fit, where $x$ is hours of practice and $\\hat{y}$ is the predicted score. What score is predicted for 8 hours of practice?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "20" },
+      { "label": "B", "type": "text", "content": "25" },
+      { "label": "C", "type": "text", "content": "30" },
+      { "label": "D", "type": "text", "content": "35" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "$\\hat{y} = 2.5(8) + 10 = 20 + 10 = 30$." }
+  },
+  {
+    "id": "PS-TV-004",
+    "section": "problem-solving",
+    "subsection": "two-variable-data",
+    "difficulty": "hard",
+    "tags": ["correlation coefficient", "interpretation"],
+    "question": { "type": "text", "content": "A researcher finds that the correlation coefficient between variables A and B is r = 0.92. Which conclusion is best supported?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "A causes B" },
+      { "label": "B", "type": "text", "content": "There is a strong positive association between A and B" },
+      { "label": "C", "type": "text", "content": "A and B are unrelated" },
+      { "label": "D", "type": "text", "content": "B causes A" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "r = 0.92 indicates a strong positive association. Correlation does NOT imply causation, so neither A nor B can be concluded as the cause." }
+  }
+]

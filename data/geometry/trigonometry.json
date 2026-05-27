@@ -1,0 +1,66 @@
+[
+  {
+    "id": "GEO-TG-001",
+    "section": "geometry",
+    "subsection": "trigonometry",
+    "difficulty": "medium",
+    "tags": ["SOH-CAH-TOA", "sine", "30-60-90"],
+    "question": { "type": "latex", "content": "In right triangle $ABC$ with right angle at $C$, $\\angle A = 30°$ and hypotenuse $AB = 10$. What is the length of side $BC$?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "5" },
+      { "label": "B", "type": "latex", "content": "$5\\sqrt{3}$" },
+      { "label": "C", "type": "latex", "content": "$\\dfrac{10}{\\sqrt{3}}$" },
+      { "label": "D", "type": "text", "content": "10" }
+    ],
+    "correctIndex": 0,
+    "explanation": { "type": "latex", "content": "$\\sin(A) = \\dfrac{BC}{AB}$. So $BC = AB \\cdot \\sin(30°) = 10 \\times \\dfrac{1}{2} = 5$." }
+  },
+  {
+    "id": "GEO-TG-002",
+    "section": "geometry",
+    "subsection": "trigonometry",
+    "difficulty": "easy",
+    "tags": ["Pythagorean identity"],
+    "question": { "type": "latex", "content": "What is the value of $\\sin^2(\\theta) + \\cos^2(\\theta)$ for any angle $\\theta$?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "0" },
+      { "label": "B", "type": "text", "content": "1" },
+      { "label": "C", "type": "text", "content": "2" },
+      { "label": "D", "type": "text", "content": "It depends on θ" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "This is the Pythagorean identity: sin²(θ) + cos²(θ) = 1 for all values of θ." }
+  },
+  {
+    "id": "GEO-TG-003",
+    "section": "geometry",
+    "subsection": "trigonometry",
+    "difficulty": "medium",
+    "tags": ["radians to degrees", "conversion"],
+    "question": { "type": "latex", "content": "Convert $\\dfrac{3\\pi}{4}$ radians to degrees." },
+    "choices": [
+      { "label": "A", "type": "text", "content": "90°" },
+      { "label": "B", "type": "text", "content": "120°" },
+      { "label": "C", "type": "text", "content": "135°" },
+      { "label": "D", "type": "text", "content": "150°" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Multiply by $\\dfrac{180°}{\\pi}$: $\\dfrac{3\\pi}{4} \\times \\dfrac{180°}{\\pi} = \\dfrac{3 \\times 180°}{4} = \\dfrac{540°}{4} = 135°$." }
+  },
+  {
+    "id": "GEO-TG-004",
+    "section": "geometry",
+    "subsection": "trigonometry",
+    "difficulty": "hard",
+    "tags": ["sine from tangent", "SOH-CAH-TOA"],
+    "question": { "type": "latex", "content": "If $\\tan(\\theta) = \\dfrac{3}{4}$ and $0 < \\theta < \\dfrac{\\pi}{2}$, what is $\\sin(\\theta)$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$\\dfrac{3}{5}$" },
+      { "label": "B", "type": "latex", "content": "$\\dfrac{4}{5}$" },
+      { "label": "C", "type": "latex", "content": "$\\dfrac{3}{4}$" },
+      { "label": "D", "type": "latex", "content": "$\\dfrac{4}{3}$" }
+    ],
+    "correctIndex": 0,
+    "explanation": { "type": "latex", "content": "$\\tan\\theta = \\frac{\\text{opp}}{\\text{adj}} = \\frac{3}{4}$. Hypotenuse $= \\sqrt{3^2+4^2} = 5$. So $\\sin\\theta = \\dfrac{3}{5}$." }
+  }
+]

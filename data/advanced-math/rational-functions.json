@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ADV-RA-001",
+    "section": "advanced-math",
+    "subsection": "rational-functions",
+    "difficulty": "easy",
+    "tags": ["domain", "undefined"],
+    "question": { "type": "latex", "content": "Which value of $x$ is NOT in the domain of $f(x) = \\dfrac{3}{x - 5}$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x = -5$" },
+      { "label": "B", "type": "latex", "content": "$x = 0$" },
+      { "label": "C", "type": "latex", "content": "$x = 3$" },
+      { "label": "D", "type": "latex", "content": "$x = 5$" }
+    ],
+    "correctIndex": 3,
+    "explanation": { "type": "text", "content": "The denominator x − 5 = 0 when x = 5. Division by zero is undefined, so x = 5 is excluded from the domain." }
+  },
+  {
+    "id": "ADV-RA-002",
+    "section": "advanced-math",
+    "subsection": "rational-functions",
+    "difficulty": "medium",
+    "tags": ["simplify", "cancel"],
+    "question": { "type": "latex", "content": "Simplify $\\dfrac{x^2 - 4}{x - 2}$ for $x \\neq 2$." },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x - 2$" },
+      { "label": "B", "type": "latex", "content": "$x + 2$" },
+      { "label": "C", "type": "latex", "content": "$x^2 - 4$" },
+      { "label": "D", "type": "latex", "content": "$2$" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Factor the numerator: $x^2 - 4 = (x+2)(x-2)$. Cancel: $\\dfrac{(x+2)(x-2)}{x-2} = x+2$." }
+  },
+  {
+    "id": "ADV-RA-003",
+    "section": "advanced-math",
+    "subsection": "rational-functions",
+    "difficulty": "medium",
+    "tags": ["rational equation", "solve"],
+    "question": { "type": "latex", "content": "What is the value of $x$ if $\\dfrac{3}{x} + \\dfrac{1}{4} = \\dfrac{7}{4}$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x = 1$" },
+      { "label": "B", "type": "latex", "content": "$x = 2$" },
+      { "label": "C", "type": "latex", "content": "$x = 3$" },
+      { "label": "D", "type": "latex", "content": "$x = 4$" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Subtract $\\frac{1}{4}$: $\\frac{3}{x} = \\frac{7}{4} - \\frac{1}{4} = \\frac{6}{4} = \\frac{3}{2}$. So $x = \\frac{3}{3/2} = 2$." }
+  },
+  {
+    "id": "ADV-RA-004",
+    "section": "advanced-math",
+    "subsection": "rational-functions",
+    "difficulty": "hard",
+    "tags": ["simplify", "polynomial division"],
+    "question": { "type": "latex", "content": "The expression $\\dfrac{2x^2 + 3x - 2}{x + 2}$ simplifies to which of the following for $x \\neq -2$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$2x - 1$" },
+      { "label": "B", "type": "latex", "content": "$2x + 1$" },
+      { "label": "C", "type": "latex", "content": "$x - 2$" },
+      { "label": "D", "type": "latex", "content": "$x + 2$" }
+    ],
+    "correctIndex": 0,
+    "explanation": { "type": "latex", "content": "Factor: $2x^2+3x-2 = (2x-1)(x+2)$. Cancel $(x+2)$: result is $2x-1$." }
+  }
+]

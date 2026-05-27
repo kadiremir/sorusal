@@ -1,0 +1,66 @@
+[
+  {
+    "id": "GEO-LA-001",
+    "section": "geometry",
+    "subsection": "lines-and-angles",
+    "difficulty": "easy",
+    "tags": ["parallel lines", "alternate interior"],
+    "question": { "type": "text", "content": "Two parallel lines are cut by a transversal. If one angle measures 65°, what is the measure of its alternate interior angle?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "25°" },
+      { "label": "B", "type": "text", "content": "65°" },
+      { "label": "C", "type": "text", "content": "115°" },
+      { "label": "D", "type": "text", "content": "125°" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "Alternate interior angles formed by parallel lines and a transversal are equal. So the angle also measures 65°." }
+  },
+  {
+    "id": "GEO-LA-002",
+    "section": "geometry",
+    "subsection": "lines-and-angles",
+    "difficulty": "medium",
+    "tags": ["supplementary angles", "equation"],
+    "question": { "type": "latex", "content": "Two supplementary angles have measures $(3x + 20)°$ and $(x + 40)°$. What is the value of $x$?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "20" },
+      { "label": "B", "type": "text", "content": "25" },
+      { "label": "C", "type": "text", "content": "30" },
+      { "label": "D", "type": "text", "content": "35" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Supplementary angles sum to $180°$: $(3x+20)+(x+40)=180 \\Rightarrow 4x+60=180 \\Rightarrow 4x=120 \\Rightarrow x=30$." }
+  },
+  {
+    "id": "GEO-LA-003",
+    "section": "geometry",
+    "subsection": "lines-and-angles",
+    "difficulty": "easy",
+    "tags": ["vertical angles"],
+    "question": { "type": "text", "content": "Vertical angles are always:" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "Supplementary (sum to 180°)" },
+      { "label": "B", "type": "text", "content": "Complementary (sum to 90°)" },
+      { "label": "C", "type": "text", "content": "Equal in measure (congruent)" },
+      { "label": "D", "type": "text", "content": "Adjacent" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "Vertical angles are formed by two intersecting lines and are always congruent (equal in measure)." }
+  },
+  {
+    "id": "GEO-LA-004",
+    "section": "geometry",
+    "subsection": "lines-and-angles",
+    "difficulty": "medium",
+    "tags": ["co-interior angles", "parallel lines"],
+    "question": { "type": "latex", "content": "Lines $l$ and $m$ are parallel. A transversal creates co-interior (same-side interior) angles of $(5x - 10)°$ and $(3x + 30)°$. What is $x$?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "15" },
+      { "label": "B", "type": "text", "content": "18" },
+      { "label": "C", "type": "text", "content": "20" },
+      { "label": "D", "type": "text", "content": "25" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Co-interior angles sum to $180°$: $(5x-10)+(3x+30)=180 \\Rightarrow 8x+20=180 \\Rightarrow 8x=160 \\Rightarrow x=20$." }
+  }
+]

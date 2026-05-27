@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ALG-SY-001",
+    "section": "algebra",
+    "subsection": "systems-of-equations",
+    "difficulty": "easy",
+    "tags": ["elimination", "two equations"],
+    "question": { "type": "text", "content": "If 2x + y = 7 and x − y = 2, what is the value of x?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "1" },
+      { "label": "B", "type": "text", "content": "2" },
+      { "label": "C", "type": "text", "content": "3" },
+      { "label": "D", "type": "text", "content": "4" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "Add the equations: (2x + y) + (x − y) = 7 + 2 → 3x = 9 → x = 3." }
+  },
+  {
+    "id": "ALG-SY-002",
+    "section": "algebra",
+    "subsection": "systems-of-equations",
+    "difficulty": "medium",
+    "tags": ["substitution", "two equations"],
+    "question": { "type": "latex", "content": "If $2x + y = 9$ and $x + y = 6$, what is the value of $y$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$y = 1$" },
+      { "label": "B", "type": "latex", "content": "$y = 2$" },
+      { "label": "C", "type": "latex", "content": "$y = 3$" },
+      { "label": "D", "type": "latex", "content": "$y = 4$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Subtract the second equation from the first: $(2x+y)-(x+y)=9-6 \\Rightarrow x=3$. Substitute: $3+y=6 \\Rightarrow y=3$." }
+  },
+  {
+    "id": "ALG-SY-003",
+    "section": "algebra",
+    "subsection": "systems-of-equations",
+    "difficulty": "medium",
+    "tags": ["word problem", "two unknowns"],
+    "question": { "type": "text", "content": "Marco buys apples for $1 each and oranges for $2 each. He buys 10 fruits total and spends $15. How many apples did he buy?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "3" },
+      { "label": "B", "type": "text", "content": "4" },
+      { "label": "C", "type": "text", "content": "5" },
+      { "label": "D", "type": "text", "content": "7" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "Let a = apples, o = oranges. a + o = 10 and a + 2o = 15. Subtracting: o = 5, so a = 5." }
+  },
+  {
+    "id": "ALG-SY-004",
+    "section": "algebra",
+    "subsection": "systems-of-equations",
+    "difficulty": "hard",
+    "tags": ["no solution", "parallel lines"],
+    "question": { "type": "latex", "content": "The system $kx + 3y = 6$ and $4x + y = 8$ has no solution. What is the value of $k$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$k = 4$" },
+      { "label": "B", "type": "latex", "content": "$k = 8$" },
+      { "label": "C", "type": "latex", "content": "$k = 12$" },
+      { "label": "D", "type": "latex", "content": "$k = 16$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "For no solution, lines must be parallel (same slope, different intercept). Rewrite: $y = -\\frac{k}{3}x + 2$ and $y = -4x + 8$. Equal slopes: $\\frac{k}{3} = 4 \\Rightarrow k = 12$. Check intercepts differ (2 ≠ 8). ✓" }
+  }
+]

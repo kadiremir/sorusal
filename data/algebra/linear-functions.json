@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ALG-LF-001",
+    "section": "algebra",
+    "subsection": "linear-functions",
+    "difficulty": "easy",
+    "tags": ["function evaluation"],
+    "question": { "type": "text", "content": "If f(x) = 3x − 5, what is the value of f(4)?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "7" },
+      { "label": "B", "type": "text", "content": "9" },
+      { "label": "C", "type": "text", "content": "12" },
+      { "label": "D", "type": "text", "content": "17" }
+    ],
+    "correctIndex": 0,
+    "explanation": { "type": "text", "content": "Substitute x = 4: f(4) = 3(4) − 5 = 12 − 5 = 7." }
+  },
+  {
+    "id": "ALG-LF-002",
+    "section": "algebra",
+    "subsection": "linear-functions",
+    "difficulty": "medium",
+    "tags": ["slope", "two points"],
+    "question": { "type": "text", "content": "A line passes through the points (0, 3) and (2, 9). What is the slope of the line?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "2" },
+      { "label": "B", "type": "text", "content": "3" },
+      { "label": "C", "type": "text", "content": "4" },
+      { "label": "D", "type": "text", "content": "6" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Slope $= \\dfrac{9-3}{2-0} = \\dfrac{6}{2} = 3$." }
+  },
+  {
+    "id": "ALG-LF-003",
+    "section": "algebra",
+    "subsection": "linear-functions",
+    "difficulty": "medium",
+    "tags": ["slope-intercept", "equation writing"],
+    "question": { "type": "latex", "content": "Which equation represents a line with slope $-2$ and $y$-intercept $5$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$y = 2x + 5$" },
+      { "label": "B", "type": "latex", "content": "$y = -2x - 5$" },
+      { "label": "C", "type": "latex", "content": "$y = -2x + 5$" },
+      { "label": "D", "type": "latex", "content": "$y = 5x - 2$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Slope-intercept form is $y = mx + b$. With $m = -2$ and $b = 5$: $y = -2x + 5$." }
+  },
+  {
+    "id": "ALG-LF-004",
+    "section": "algebra",
+    "subsection": "linear-functions",
+    "difficulty": "hard",
+    "tags": ["table", "pattern", "prediction"],
+    "question": { "type": "text", "content": "A linear function contains the points (0, 4) and (2, 10). What is the value of y when x = 5?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "14" },
+      { "label": "B", "type": "text", "content": "17" },
+      { "label": "C", "type": "text", "content": "19" },
+      { "label": "D", "type": "text", "content": "22" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Slope $= \\dfrac{10-4}{2-0} = 3$. Equation: $y = 3x + 4$. At $x = 5$: $y = 3(5)+4 = 19$." }
+  }
+]

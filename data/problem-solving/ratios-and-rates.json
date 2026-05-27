@@ -1,0 +1,66 @@
+[
+  {
+    "id": "PS-RR-001",
+    "section": "problem-solving",
+    "subsection": "ratios-and-rates",
+    "difficulty": "easy",
+    "tags": ["unit rate", "proportions"],
+    "question": { "type": "text", "content": "A car travels 240 miles in 4 hours. At the same rate, how many miles will it travel in 7 hours?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "280 miles" },
+      { "label": "B", "type": "text", "content": "360 miles" },
+      { "label": "C", "type": "text", "content": "420 miles" },
+      { "label": "D", "type": "text", "content": "480 miles" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "text", "content": "Rate = 240 ÷ 4 = 60 mph. Distance in 7 hours = 60 × 7 = 420 miles." }
+  },
+  {
+    "id": "PS-RR-002",
+    "section": "problem-solving",
+    "subsection": "ratios-and-rates",
+    "difficulty": "medium",
+    "tags": ["inverse proportion", "work rate"],
+    "question": { "type": "text", "content": "If 8 workers can complete a project in 15 days, how many days would it take 12 workers to complete the same project?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "8 days" },
+      { "label": "B", "type": "text", "content": "10 days" },
+      { "label": "C", "type": "text", "content": "12 days" },
+      { "label": "D", "type": "text", "content": "20 days" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "Total worker-days = 8 × 15 = 120. Time for 12 workers = 120 ÷ 12 = 10 days." }
+  },
+  {
+    "id": "PS-RR-003",
+    "section": "problem-solving",
+    "subsection": "ratios-and-rates",
+    "difficulty": "medium",
+    "tags": ["ratio", "parts"],
+    "question": { "type": "latex", "content": "In a class of 30 students, the ratio of boys to girls is $2:3$. How many girls are in the class?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "12" },
+      { "label": "B", "type": "text", "content": "15" },
+      { "label": "C", "type": "text", "content": "18" },
+      { "label": "D", "type": "text", "content": "20" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Total parts = $2+3 = 5$. Girls $= \\dfrac{3}{5} \\times 30 = 18$." }
+  },
+  {
+    "id": "PS-RR-004",
+    "section": "problem-solving",
+    "subsection": "ratios-and-rates",
+    "difficulty": "easy",
+    "tags": ["recipe", "scaling"],
+    "question": { "type": "text", "content": "A recipe calls for 2 cups of flour for every 3 cups of sugar. If you use 9 cups of sugar, how many cups of flour do you need?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "4 cups" },
+      { "label": "B", "type": "text", "content": "5 cups" },
+      { "label": "C", "type": "text", "content": "6 cups" },
+      { "label": "D", "type": "text", "content": "8 cups" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Flour-to-sugar ratio: $\\frac{2}{3}$. Flour needed: $\\frac{2}{3} \\times 9 = 6$ cups." }
+  }
+]

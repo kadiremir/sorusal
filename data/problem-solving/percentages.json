@@ -1,0 +1,66 @@
+[
+  {
+    "id": "PS-PE-001",
+    "section": "problem-solving",
+    "subsection": "percentages",
+    "difficulty": "easy",
+    "tags": ["discount", "sale price"],
+    "question": { "type": "text", "content": "A jacket originally costs $80. It is on sale for 25% off. What is the sale price?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "$55" },
+      { "label": "B", "type": "text", "content": "$60" },
+      { "label": "C", "type": "text", "content": "$64" },
+      { "label": "D", "type": "text", "content": "$65" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "Discount = 25% × $80 = $20. Sale price = $80 − $20 = $60." }
+  },
+  {
+    "id": "PS-PE-002",
+    "section": "problem-solving",
+    "subsection": "percentages",
+    "difficulty": "medium",
+    "tags": ["percent increase", "population"],
+    "question": { "type": "text", "content": "A town's population increased from 4,000 to 5,000. What is the percent increase?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "20%" },
+      { "label": "B", "type": "text", "content": "25%" },
+      { "label": "C", "type": "text", "content": "30%" },
+      { "label": "D", "type": "text", "content": "50%" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Percent increase $= \\dfrac{5000-4000}{4000} \\times 100 = \\dfrac{1000}{4000} \\times 100 = 25\\%$." }
+  },
+  {
+    "id": "PS-PE-003",
+    "section": "problem-solving",
+    "subsection": "percentages",
+    "difficulty": "medium",
+    "tags": ["reverse percent", "original price"],
+    "question": { "type": "text", "content": "After a 20% discount, a phone costs $320. What was the original price?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "$380" },
+      { "label": "B", "type": "text", "content": "$384" },
+      { "label": "C", "type": "text", "content": "$400" },
+      { "label": "D", "type": "text", "content": "$420" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "After 20% off, price = $80\\%$ of original. $320 = 0.80 \\times P \\Rightarrow P = 320 \\div 0.80 = \\$400$." }
+  },
+  {
+    "id": "PS-PE-004",
+    "section": "problem-solving",
+    "subsection": "percentages",
+    "difficulty": "medium",
+    "tags": ["finding the percent"],
+    "question": { "type": "latex", "content": "If $p\\%$ of 60 is 15, what is $p$?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "20" },
+      { "label": "B", "type": "text", "content": "25" },
+      { "label": "C", "type": "text", "content": "30" },
+      { "label": "D", "type": "text", "content": "40" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "$\\dfrac{p}{100} \\times 60 = 15 \\Rightarrow p = \\dfrac{15 \\times 100}{60} = 25$." }
+  }
+]

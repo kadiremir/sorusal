@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorusal — SAT Math Soru Bankası</title>
+  <meta name="description" content="SAT Matematik soru bankası. Konuya göre soru seç, çöz, öğren. Cebir, İleri Matematik, Problem Çözme ve Geometri.">
+  <meta property="og:title" content="Sorusal — SAT Math Soru Bankası">
+  <meta property="og:description" content="SAT Matematik soru bankası. Konuya göre soru seç, çöz, öğren.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER / NAV
+  ═══════════════════════════════════════════ -->
+  <header class="main-header">
+    <div class="container nav-container">
+
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Sorusal — Ana Sayfa">
+        <span class="logo-mark" aria-hidden="true">S</span>
+        <span class="logo-text">Sorusal</span>
+      </a>
+
+      <!-- Main nav -->
+      <nav class="main-nav" id="main-nav" aria-label="Ana navigasyon">
+        <ul class="nav-list">
+
+          <li class="nav-item">
+            <a href="#sinavlar" class="nav-link">Sınavlar</a>
+          </li>
+
+          <li class="nav-item has-dropdown">
+            <button class="nav-link"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    id="nav-sorular-btn">
+              Sorular <span class="nav-caret" aria-hidden="true">▾</span>
+            </button>
+            <ul class="nav-dropdown" role="menu" aria-labelledby="nav-sorular-btn">
+              <li role="none">
+                <a href="sat.html" class="nav-dropdown-item" role="menuitem">
+                  <span class="nav-dropdown-icon">🎓</span>
+                  <span class="nav-dropdown-body">
+                    <strong>SAT</strong>
+                    <span>SAT Math soru bankası</span>
+                  </span>
+                  <span class="nav-dropdown-badge">Aktif</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a href="#kaynaklar" class="nav-link">Kaynaklar</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#iletisim" class="nav-link">İletişim</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Right-side actions -->
+      <div class="nav-actions">
+        <a href="sat.html" class="btn-nav-cta">Sınava Başla →</a>
+        <button class="nav-hamburger"
+                id="nav-hamburger"
+                aria-label="Menüyü aç"
+                aria-expanded="false"
+                aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <span>✦</span> SAT Math Soru Bankası
+          </p>
+          <h1>Sınava hazırlan,<br><em>güvenle gir.</em></h1>
+          <p class="hero-sub">
+            Gerçek SAT formatında sorular. İstediğin konudan, istediğin
+            zorlukta. Metinsel, görsel ve LaTeX matematik içerikli
+            sorularla pratik yap — hesap gerektirmez.
+          </p>
+          <div class="hero-ctas">
+            <a href="sat.html" class="btn-hero-primary">
+              <span>Sınava Başla</span>
+              <span aria-hidden="true">→</span>
+            </a>
+            <a href="#nasil-calisir" class="btn-hero-ghost">Nasıl Çalışır?</a>
+          </div>
+        </div>
+
+        <!-- Decorative mock card (desktop only) -->
+        <div class="hero-decoration" aria-hidden="true">
+          <div class="hero-card-mock">
+            <p class="mock-q">If 3x − 7 = 14, what is the value of x?</p>
+            <div class="mock-choices">
+              <div class="mock-choice"><span class="mock-label">A</span> 5</div>
+              <div class="mock-choice selected"><span class="mock-label">B</span> 7</div>
+              <div class="mock-choice"><span class="mock-label">C</span> 9</div>
+              <div class="mock-choice"><span class="mock-label">D</span> 21</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         STATS STRIP
+    ═══════════════════════════════════════════ -->
+    <section class="stats-strip" aria-label="Platform istatistikleri">
+      <div class="container">
+        <div class="stats-inner">
+          <div class="stat-item">
+            <span class="stat-number">400+</span>
+            <span class="stat-label">Soru</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">Alan</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">18</span>
+            <span class="stat-label">Alt Konu</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">%100</span>
+            <span class="stat-label">Ücretsiz</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         FEATURES
+    ═══════════════════════════════════════════ -->
+    <section class="page-section" aria-labelledby="features-heading">
+      <div class="container">
+        <p class="section-eyebrow">Neden Sorusal?</p>
+        <h2 class="section-heading" id="features-heading">
+          Öğrenmek için tasarlandı
+        </h2>
+        <p class="section-sub">
+          SAT sınavına hazırlanırken ihtiyacın olan her şey tek bir yerde.
+          Hesap gerektirmez, kurulum yok — tarayıcında hemen başla.
+        </p>
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📚</span>
+            <h3 class="feature-title">Geniş Soru Havuzu</h3>
+            <p class="feature-desc">
+              4 ana alanda 18 alt konu, gerçek SAT formatında 400'den fazla soru.
+              Kolay'dan Zor'a tüm seviyeleri kapsıyor.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">💡</span>
+            <h3 class="feature-title">Anlık Geri Bildirim</h3>
+            <p class="feature-desc">
+              Her soru için adım adım açıklama. Nerede hata yaptığını anla,
+              aynı hatayı tekrar yapma.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📱</span>
+            <h3 class="feature-title">Her Cihazda Çalışır</h3>
+            <p class="feature-desc">
+              Telefon, tablet veya bilgisayar — responsive tasarım her ekranda
+              mükemmel görünür. İnternet bağlantısı yeter.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🎯</span>
+            <h3 class="feature-title">Konuya Göre Çalış</h3>
+            <p class="feature-desc">
+              Zayıf olduğun alt konuya odaklan. Cebir mi, Geometri mi?
+              İstediğin konuyu seç, özelleştirilmiş sınav oluştur.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🔢</span>
+            <h3 class="feature-title">LaTeX Matematik</h3>
+            <p class="feature-desc">
+              Tüm matematiksel ifadeler KaTeX ile profesyonelce render edilir.
+              Karmaşık denklemler bile net ve okunabilir görünür.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🔄</span>
+            <h3 class="feature-title">Tekrar Et, Pekiştir</h3>
+            <p class="feature-desc">
+              Aynı soru setini "Tekrar Çöz" butonu ile bir daha çözebilirsin.
+              Pekiştirme öğrenmenin anahtarı.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SINAVLAR
+    ═══════════════════════════════════════════ -->
+    <section class="page-section" id="sinavlar" aria-labelledby="exams-heading">
+      <div class="container">
+        <p class="section-eyebrow">Desteklenen Sınavlar</p>
+        <h2 class="section-heading" id="exams-heading">
+          Hangi sınava hazırlanıyorsun?
+        </h2>
+        <p class="section-sub">
+          Şu an SAT matematik içeriği aktif. Diğer sınavlar yakında ekleniyor.
+        </p>
+
+        <div class="exams-grid">
+
+          <a href="sat.html" class="exam-card active">
+            <span class="exam-badge-active">Aktif</span>
+            <span class="exam-card-label">College Board</span>
+            <span class="exam-card-name">SAT</span>
+            <span class="exam-card-sub">Matematik — 4 alan, 18 konu</span>
+          </a>
+
+          <div class="exam-card coming-soon">
+            <span class="exam-card-label">ÖSYM</span>
+            <span class="exam-card-name">YKS</span>
+            <span class="exam-card-sub">Yakında</span>
+          </div>
+
+          <div class="exam-card coming-soon">
+            <span class="exam-card-label">ETS</span>
+            <span class="exam-card-name">GRE</span>
+            <span class="exam-card-sub">Yakında</span>
+          </div>
+
+          <div class="exam-card coming-soon">
+            <span class="exam-card-label">GMAC</span>
+            <span class="exam-card-name">GMAT</span>
+            <span class="exam-card-sub">Yakında</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         HOW IT WORKS
+    ═══════════════════════════════════════════ -->
+    <section class="page-section" id="nasil-calisir" aria-labelledby="steps-heading">
+      <div class="container">
+        <p class="section-eyebrow">Nasıl Çalışır?</p>
+        <h2 class="section-heading" id="steps-heading">3 adımda hazırlan</h2>
+
+        <div class="steps-grid">
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3 class="step-title">Alan ve Konu Seç</h3>
+            <p class="step-desc">
+              4 SAT matematik alanından birini seç. İstediğin alt konuları
+              işaretle, soru sayısı ve zorluk seviyesini ayarla.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3 class="step-title">Sınavı Çöz</h3>
+            <p class="step-desc">
+              Rastgele seçilmiş sorularla kişiselleştirilmiş sınavını çöz.
+              Metinsel, görsel ve LaTeX içerikli sorular bir arada.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3 class="step-title">Sonuçlarını İncele</h3>
+            <p class="step-desc">
+              Skor halkanı gör, doğru/yanlış cevaplarını karşılaştır.
+              Her soru için adım adım açıklamayı oku.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         KAYNAKLAR
+    ═══════════════════════════════════════════ -->
+    <section class="page-section" id="kaynaklar" aria-labelledby="resources-heading">
+      <div class="container">
+        <p class="section-eyebrow">Kaynaklar</p>
+        <h2 class="section-heading" id="resources-heading">
+          Ek çalışma materyalleri
+        </h2>
+        <div class="resources-placeholder">
+          <p>🚧 Bu bölüm yakında hazır olacak.</p>
+          <p style="font-size:var(--font-size-sm);margin-top:var(--space-sm)">
+            SAT hazırlık kitapları, strateji rehberleri ve faydalı bağlantılar burada yer alacak.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         İLETİŞİM
+    ═══════════════════════════════════════════ -->
+    <section class="page-section" id="iletisim" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-box">
+          <h3 id="contact-heading">Soru veya önerin mi var?</h3>
+          <p>
+            Hata bildirmek, yeni soru önermek veya katkıda bulunmak için
+            bize ulaşabilirsin. Her geri bildirim değerlidir.
+          </p>
+          <a href="mailto:kadiremir86@gmail.com" class="btn-contact">
+            <span>✉</span>
+            <span>İletişime Geç</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+
+        <a href="index.html" class="footer-logo" aria-label="Sorusal — Ana Sayfa">
+          <span class="logo-mark" aria-hidden="true">S</span>
+          <span class="logo-text">Sorusal</span>
+        </a>
+
+        <ul class="footer-links">
+          <li><a href="#sinavlar">Sınavlar</a></li>
+          <li><a href="sat.html">SAT Soruları</a></li>
+          <li><a href="#kaynaklar">Kaynaklar</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+
+        <p class="footer-copy">
+          Sorusal &copy; 2025 &mdash;
+          SAT® College Board'ın tescilli markasıdır. Bu proje College Board ile bağlantılı değildir.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Nav JS (inline — no module needed) -->
+  <script>
+    (function () {
+      const hamburger  = document.getElementById('nav-hamburger');
+      const mainNav    = document.getElementById('main-nav');
+      const sorularBtn = document.getElementById('nav-sorular-btn');
+      const sorularLi  = sorularBtn?.closest('.has-dropdown');
+
+      // Hamburger toggle
+      hamburger?.addEventListener('click', () => {
+        const open = mainNav.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', String(open));
+        hamburger.setAttribute('aria-label', open ? 'Menüyü kapat' : 'Menüyü aç');
+      });
+
+      // Sorular dropdown (JS — for keyboard / touch)
+      sorularBtn?.addEventListener('click', e => {
+        e.stopPropagation();
+        const open = sorularLi.classList.toggle('open');
+        sorularBtn.setAttribute('aria-expanded', String(open));
+      });
+
+      // Close dropdown when clicking outside
+      document.addEventListener('click', () => {
+        sorularLi?.classList.remove('open');
+        sorularBtn?.setAttribute('aria-expanded', 'false');
+      });
+
+      // Smooth-scroll for hash links
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+          const target = document.querySelector(a.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Close mobile nav if open
+            mainNav.classList.remove('open');
+            hamburger?.setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>

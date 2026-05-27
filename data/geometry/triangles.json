@@ -1,0 +1,66 @@
+[
+  {
+    "id": "GEO-TR-001",
+    "section": "geometry",
+    "subsection": "triangles",
+    "difficulty": "easy",
+    "tags": ["Pythagorean theorem", "right triangle"],
+    "question": { "type": "text", "content": "A right triangle has legs of length 9 and 12. What is the length of the hypotenuse?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "10" },
+      { "label": "B", "type": "text", "content": "13" },
+      { "label": "C", "type": "text", "content": "15" },
+      { "label": "D", "type": "text", "content": "17" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "$c = \\sqrt{9^2 + 12^2} = \\sqrt{81+144} = \\sqrt{225} = 15$." }
+  },
+  {
+    "id": "GEO-TR-002",
+    "section": "geometry",
+    "subsection": "triangles",
+    "difficulty": "easy",
+    "tags": ["angle sum", "triangle"],
+    "question": { "type": "latex", "content": "Two angles of a triangle measure $45°$ and $75°$. What is the measure of the third angle?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "45°" },
+      { "label": "B", "type": "text", "content": "60°" },
+      { "label": "C", "type": "text", "content": "75°" },
+      { "label": "D", "type": "text", "content": "90°" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "The sum of angles in a triangle is 180°. Third angle = 180° − 45° − 75° = 60°." }
+  },
+  {
+    "id": "GEO-TR-003",
+    "section": "geometry",
+    "subsection": "triangles",
+    "difficulty": "medium",
+    "tags": ["similar triangles", "proportionality"],
+    "question": { "type": "text", "content": "Triangle ABC is similar to triangle DEF. AB = 6, BC = 9, and DE = 4. What is the length of EF?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "4" },
+      { "label": "B", "type": "text", "content": "5" },
+      { "label": "C", "type": "text", "content": "6" },
+      { "label": "D", "type": "text", "content": "8" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Scale factor: $\\dfrac{DE}{AB} = \\dfrac{4}{6} = \\dfrac{2}{3}$. So $EF = BC \\times \\dfrac{2}{3} = 9 \\times \\dfrac{2}{3} = 6$." }
+  },
+  {
+    "id": "GEO-TR-004",
+    "section": "geometry",
+    "subsection": "triangles",
+    "difficulty": "hard",
+    "tags": ["SOH-CAH-TOA", "cosine"],
+    "question": { "type": "latex", "content": "In right triangle $ABC$ with the right angle at $C$, $BC = 5$ and $AB = 13$. What is $\\cos(A)$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$\\dfrac{5}{13}$" },
+      { "label": "B", "type": "latex", "content": "$\\dfrac{5}{12}$" },
+      { "label": "C", "type": "latex", "content": "$\\dfrac{12}{13}$" },
+      { "label": "D", "type": "latex", "content": "$\\dfrac{12}{5}$" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "$AC = \\sqrt{AB^2-BC^2} = \\sqrt{169-25} = \\sqrt{144} = 12$. $\\cos(A) = \\dfrac{\\text{adjacent}}{\\text{hypotenuse}} = \\dfrac{AC}{AB} = \\dfrac{12}{13}$." }
+  }
+]

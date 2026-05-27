@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ADV-EX-001",
+    "section": "advanced-math",
+    "subsection": "exponential-functions",
+    "difficulty": "easy",
+    "tags": ["growth", "word problem"],
+    "question": { "type": "text", "content": "A bacteria culture starts with 100 bacteria and doubles every 3 hours. How many bacteria will there be after 9 hours?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "200" },
+      { "label": "B", "type": "text", "content": "400" },
+      { "label": "C", "type": "text", "content": "600" },
+      { "label": "D", "type": "text", "content": "800" }
+    ],
+    "correctIndex": 3,
+    "explanation": { "type": "latex", "content": "Number of doublings in 9 hours: $\\frac{9}{3} = 3$. Total bacteria: $100 \\times 2^3 = 100 \\times 8 = 800$." }
+  },
+  {
+    "id": "ADV-EX-002",
+    "section": "advanced-math",
+    "subsection": "exponential-functions",
+    "difficulty": "medium",
+    "tags": ["growth vs decay", "base"],
+    "question": { "type": "latex", "content": "Which of the following functions represents exponential decay?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$f(x) = 3 \\cdot (1.5)^x$" },
+      { "label": "B", "type": "latex", "content": "$f(x) = 5 \\cdot (0.8)^x$" },
+      { "label": "C", "type": "latex", "content": "$f(x) = 2^x + 1$" },
+      { "label": "D", "type": "latex", "content": "$f(x) = -3 \\cdot (1.2)^x$" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "text", "content": "Exponential decay has a positive base between 0 and 1. Only f(x) = 5·(0.8)^x has base 0.8, which is between 0 and 1." }
+  },
+  {
+    "id": "ADV-EX-003",
+    "section": "advanced-math",
+    "subsection": "exponential-functions",
+    "difficulty": "medium",
+    "tags": ["evaluation", "difference"],
+    "question": { "type": "latex", "content": "If $f(x) = 4 \\cdot 2^x$, what is the value of $f(3) - f(1)$?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "8" },
+      { "label": "B", "type": "text", "content": "16" },
+      { "label": "C", "type": "text", "content": "24" },
+      { "label": "D", "type": "text", "content": "32" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "$f(3) = 4 \\cdot 2^3 = 32$. $f(1) = 4 \\cdot 2^1 = 8$. $f(3) - f(1) = 32 - 8 = 24$." }
+  },
+  {
+    "id": "ADV-EX-004",
+    "section": "advanced-math",
+    "subsection": "exponential-functions",
+    "difficulty": "hard",
+    "tags": ["half-life", "decay model"],
+    "question": { "type": "latex", "content": "The function $f(t) = 1000 \\cdot (0.5)^{t/4}$ models the amount of a substance remaining after $t$ days. What is the half-life of the substance in days?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "0.5 days" },
+      { "label": "B", "type": "text", "content": "2 days" },
+      { "label": "C", "type": "text", "content": "4 days" },
+      { "label": "D", "type": "text", "content": "8 days" }
+    ],
+    "correctIndex": 2,
+    "explanation": { "type": "latex", "content": "Half-life is when $f(t) = 500$: $(0.5)^{t/4} = 0.5 = (0.5)^1$. So $\\frac{t}{4} = 1 \\Rightarrow t = 4$ days." }
+  }
+]

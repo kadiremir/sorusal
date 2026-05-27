@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ALG-LI-001",
+    "section": "algebra",
+    "subsection": "linear-inequalities",
+    "difficulty": "easy",
+    "tags": ["one-step", "solution set"],
+    "question": { "type": "text", "content": "Which value of x satisfies 3x − 4 > 11?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "2" },
+      { "label": "B", "type": "text", "content": "4" },
+      { "label": "C", "type": "text", "content": "5" },
+      { "label": "D", "type": "text", "content": "6" }
+    ],
+    "correctIndex": 3,
+    "explanation": { "type": "text", "content": "3x > 15, so x > 5. The only option greater than 5 is 6." }
+  },
+  {
+    "id": "ALG-LI-002",
+    "section": "algebra",
+    "subsection": "linear-inequalities",
+    "difficulty": "medium",
+    "tags": ["sign flip", "negative coefficient"],
+    "question": { "type": "latex", "content": "What is the solution set of $-2x + 6 \\geq 10$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x \\geq -2$" },
+      { "label": "B", "type": "latex", "content": "$x \\leq -2$" },
+      { "label": "C", "type": "latex", "content": "$x \\geq 2$" },
+      { "label": "D", "type": "latex", "content": "$x \\leq 2$" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "Subtract 6: $-2x \\geq 4$. Divide by $-2$ (flip sign): $x \\leq -2$." }
+  },
+  {
+    "id": "ALG-LI-003",
+    "section": "algebra",
+    "subsection": "linear-inequalities",
+    "difficulty": "medium",
+    "tags": ["word problem", "budget"],
+    "question": { "type": "text", "content": "A store sells small candles for $3 each and large candles for $7 each. Tom wants to spend at most $30. If he buys 4 small candles, what is the maximum number of large candles he can buy?" },
+    "choices": [
+      { "label": "A", "type": "text", "content": "2" },
+      { "label": "B", "type": "text", "content": "3" },
+      { "label": "C", "type": "text", "content": "4" },
+      { "label": "D", "type": "text", "content": "5" }
+    ],
+    "correctIndex": 0,
+    "explanation": { "type": "text", "content": "Cost of small candles: 4 × $3 = $12. Remaining budget: $30 − $12 = $18. Large candles: 18 ÷ 7 = 2.57…, so maximum 2." }
+  },
+  {
+    "id": "ALG-LI-004",
+    "section": "algebra",
+    "subsection": "linear-inequalities",
+    "difficulty": "hard",
+    "tags": ["absolute value", "compound"],
+    "question": { "type": "latex", "content": "What is the solution set of $|3x - 6| < 9$?" },
+    "choices": [
+      { "label": "A", "type": "latex", "content": "$x > 5$" },
+      { "label": "B", "type": "latex", "content": "$-1 < x < 5$" },
+      { "label": "C", "type": "latex", "content": "$x < -1$ or $x > 5$" },
+      { "label": "D", "type": "latex", "content": "$-5 < x < 1$" }
+    ],
+    "correctIndex": 1,
+    "explanation": { "type": "latex", "content": "$-9 < 3x - 6 < 9$. Add 6: $-3 < 3x < 15$. Divide by 3: $-1 < x < 5$." }
+  }
+]
