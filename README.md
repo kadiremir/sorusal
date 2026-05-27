@@ -2,7 +2,7 @@
 
 Türkçe arayüzlü, SAT Matematik soru bankası. GitHub Pages üzerinde barındırılan statik bir web uygulamasıdır.
 
-🔗 **Canlı site:** `https://<kullanıcı-adı>.github.io/sorusal_claude/`
+🔗 **Canlı site:** `https://<kullanıcı-adı>.github.io/sorusal/`
 
 ---
 

@@ -274,11 +274,14 @@
   }
 
   .main-nav {
-    position: fixed;
-    top: 66px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: auto;
+    width: 100%;
+    max-height: calc(100vh - 66px);
+    max-height: calc(100dvh - 66px);
     background: var(--color-surface);
     flex-direction: column;
     justify-content: flex-start;
@@ -317,16 +320,20 @@
     padding: 12px 14px;
   }
 
-  /* Dropdown on mobile: accordion — display toggle, no max-height/overflow trick.
-     gringlizce.com approach: display:none → display:block, no scrollbar ever. */
+  /* Dropdown on mobile: accordion — gringlizce.com approach.
+     Must reset ALL desktop-only properties explicitly. */
   .nav-dropdown {
-    position: static;
-    transform: none;
-    box-shadow: none;
-    border: none;
-    border-left: 2px solid var(--color-border);
-    margin: 2px 0 6px 12px;
-    padding: 4px 0;
+    position: static;       /* was: absolute */
+    transform: none;        /* was: translateX(-50%) */
+    box-shadow: none;       /* was: var(--shadow-lg) */
+    border: none;           /* was: 1px solid border */
+    border-top: 1px solid var(--color-border);
+    border-radius: 0;       /* was: var(--radius-lg) — this was clipping content */
+    min-width: 0;           /* was: 220px — this was collapsing the panel */
+    width: 100%;            /* fill the nav item */
+    margin: 0;
+    padding: 6px 0;
+    background: rgba(0, 0, 0, 0.025);
     display: none;
     opacity: 1;
     pointer-events: auto;
@@ -338,10 +345,12 @@
     transform: none;
   }
 
-  /* Mobile dropdown items — indented, slightly smaller */
+  /* Mobile dropdown items — indented, generous tap target */
   .nav-dropdown .nav-dropdown-item {
-    padding: 10px 12px 10px 16px;
+    padding: 12px 16px 12px 28px;
+    min-height: 48px;
     border-radius: 0;
-    font-size: 0.92rem;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
   }
 }
